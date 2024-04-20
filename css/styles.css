@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Background Image */
+.bg-image {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Nav-Bar Style */
+.nav-bar {
+    width: 85%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky; top: 0;
+    
+}
+.logo { 
+    width: 200px;
+}
+
+/* Nav-Bar Items */
+.nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.nav-bar ul li a {
+    transition: color 0.3s ease;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    
+}
+.nav-bar ul li:hover a {
+    color: blue;
+}
+.hero {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: aliceblue;
+}
+.hero p {
+    font-size: 15px;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.hero h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+/* Section Styles */
+.skills, .achievements, .trainings {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px;
+    background-image: linear-gradient(rgba(12,32,54,0.75), rgba(132,23,45,0.6));
+}
+
+/* Aside Style */
+.skills aside, .achievements aside, .trainings aside {
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aside Image Style */
+.skills aside img, .achievements aside img, .trainings aside img {
+    width: 100%;
+
+    aspect-ratio: 3/4;
+    border-radius: 7%;
+
+/* Container Style */
+}
+.skills-container, .achievements-container, .trainings-container {
+    padding-top: 50px;
+    width: 70%;
+    border-radius: 13%;
+    align-items: center;
+}
+
+/* Section Title Style */
+.skills-container h1, .achievements-container h1, .trainings-container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+/* Section Images */
+.img-container img {
+    border-radius: 50%;
+    margin: 30px;
+    width: 250px;
+    aspect-ratio: 1/1;
+}
+
+/* Image Containers */
+.img-container {
+    backdrop-filter: blur(1px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: antiquewhite;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+      
+}
